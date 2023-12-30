@@ -8,17 +8,19 @@ class Solution:
             numbers[number] = numbers.get(number, 0) + 1
 
         # Sort the dictionary items based on values (frequencies) in descending order
+        print(numbers.items())
         sorted_elements = sorted(numbers.items(), key=get_frequency, reverse=True)
-        print("sorted_elemets: ",sorted_elements)
+        # print("sorted_elemets: ",sorted_elements)
         
         # Extract the top k elements
         top_k_elements = []
         for key, _ in sorted_elements[:k]:
             top_k_elements.append(key)
-
+        
         return top_k_elements
 
 def get_frequency(item):
+    # print(item)
     return item[1]
 
 

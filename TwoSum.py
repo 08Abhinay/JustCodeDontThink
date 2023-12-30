@@ -11,7 +11,7 @@ class Solution:
                 complement = target - n
                 dict[complement] = i
                 # Debug point 2: Print the dictionary after updating
-                print("Dictionary:", dict)
+                # print("Dictionary:", dict)
 
 # Test the function with the given input
 solution = Solution()
