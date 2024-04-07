@@ -17,7 +17,7 @@ def twoSum( numbers, target):
     
     while(left<right):
         sum = numbers[left] + numbers[right]
-        print(sum)
+        print(f'The sum is {sum}')
         # if(numbers[right] > target):
         #     right-=1
         #     continue
@@ -31,4 +31,4 @@ def twoSum( numbers, target):
             left+=1
         
     
-print(twoSum([-1,0],-1))
+print(twoSum([-1,0,-1,2,3,4,5,2],-1))
