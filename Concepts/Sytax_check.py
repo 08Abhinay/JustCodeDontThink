@@ -1,10 +1,13 @@
   
         
-arr = [1, 2, 3, 4]
+array = [5, 4,3, 2,1]
 
-for i in range(len(arr)):
-    if i > 0:
-        print("There are values to the left of index", i)
-        break
-    else:
-        print("No values to the left of index", i)
+
+for i in range(len(array)):
+    for j in range(len(array) - 1):
+        if array[j] > array[j + 1]:
+            temp = array[j + 1]
+            array[j + 1] = array[j]
+            array[j] = temp 
+            
+print(array)
